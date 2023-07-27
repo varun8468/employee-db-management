@@ -11,6 +11,26 @@
   const employeeInfo = document.querySelector(".employees__single--info");
 
   // Add employee logic
+  // Add Employee - START
+  const createEmployee = document.querySelector(".createEmployee");
+  const addEmployeeModal = document.querySelector(".addEmployee");
+  const addEmployeeForm = document.querySelector(".addEmployee_create");
+
+  createEmployee.addEventListener("click", () => {
+    addEmployeeModal.style.display = "flex";
+  });
+
+  addEmployeeModal.addEventListener("click", (e) => {
+    if (e.target.className === "addEmployee") {
+      addEmployeeModal.style.display = "none";
+    }
+  });
+
+  addEmployeeForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(addEmployeeForm);
+    
+  })
 
   // Select employee logic
   employeeList.addEventListener("click", (e) => {

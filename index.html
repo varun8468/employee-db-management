@@ -25,7 +25,49 @@
       </div>
       <!-- add Employee modal -->
       <div class="addEmployee">
-        <form class="addEmployee_create"></form>
+        <form class="addEmployee_create">
+          Add a new Employee
+          <div>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <input
+            type="text"
+            name="imageUrl"
+            placeholder="Image URL (Optional)"
+          />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="number"
+            name="contactNumber"
+            placeholder="Contact"
+            required
+          />
+          <input type="number" name="salary" placeholder="Salary" required />
+          <input type="text" name="address" placeholder="Address" required />
+          <input
+            type="date"
+            name="dob"
+            placeholder="Date of Birth"
+            class="addEmployee_create--dob"
+            required
+          />
+          <input
+            type="submit"
+            class="addEmployee_create--submit"
+            value="Submit"
+          />
+        </form>
       </div>
     </div>
 
